@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ <title>Upload Files</title>
+
+ <link rel="stylesheet" href="stylesheet.css">
+
+ <center><div class="row">
+   <div class="column" style="background-color:#c8a2c8;">
+   <a href="https://dix-nuts.github.io/" style="text-decoration: none">HOME</a>
+  </div>
+   <div class="column" style="background-color:#F0DCF0;">
+   <a href="https://dix-nuts.github.io/information.html" style="text-decoration: none">INFORMATION</a>
+  </div>
+  <div class="column" style="background-color:#c8a2c8;">
+   <a href="https://dix-nuts.github.io/photos.html" style="text-decoration: none">PHOTOS</a>
+  </div>
+  <div class="column" style="background-color:#F0DCF0;">
+   <a href="https://dix-nuts.github.io/videos.html" style="text-decoration: none">VIDEOS</a>
+  </div>
+  <div class="column" style="background-color:#c8a2c8;">
+   <a href="https://dix-nuts.github.io/upload.html" style="text-decoration: none">UPLOAD FILES</a>
+  </div>
+ </div></center>
+ 
+<BR>
+<BR>
+   
+ <body>
+   <h2 class="white undersub">Upload Files</h2>
+   <center><p>Please make sure Ducky is okay with his pictures or videos being uploaded before you do it! Thank you ^^</p></center>
+ </body>
+
+<style type="text/css">
+body {
+}
+</style>
+<BR>
+<BR>
+<BR>
+<div align="center">
+ <img src="https://www.allaboutbirds.org/guide/assets/photo/300196861-480px.jpg" height="500" width="500">
+ <table width="459" border="0">
+    <tbody>
+      <tr>
+        <td width="462"><div align="center">
+          <hr>
+        </div>
+          <form id="myForm" align="center">
+            <input type="text" name="myName" placeholder="Your name..">
+            <input type="file" name="myFile">
+            <input type="submit" value="Upload File" 
+           onclick="this.value='Uploading..';
+                    google.script.run.withSuccessHandler(fileUploaded)
+                    .uploadFiles(this.parentNode);
+                    return false;">
+          </form>
+          <div id="output"></div>
+          <script src="server.js"></script>
+          <script>
+    function fileUploaded(status) {
+        document.getElementById('myForm').style.display = 'none';
+        document.getElementById('output').innerHTML = status;
+    }
+          </script>
+        <style>
+ input { display:block; margin: 20px; }
+ 
+          </style>
+        <hr></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>&nbsp;</h3>
+  <p>&nbsp;</p>
+</div>
+ </html>
+ 
