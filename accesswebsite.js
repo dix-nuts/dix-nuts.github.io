@@ -5,7 +5,7 @@ function myFunction() {
     text = "Too scared to guess the password?";
   } else if (person == "ducks are tasty") {
   window.location = 'https://dix-nuts.github.io/information.html';
-   text = "I know I am :)";
+   text = "Duck Ha is tastiest";
   } else {
     text = "Get rekt lmao.";
   }
