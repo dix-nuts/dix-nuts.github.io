@@ -1,0 +1,59 @@
+p {
+      color: #FFFFFF;
+      font-size: 16px;
+}
+
+form {
+      color: #FFFFFF;
+      font-size: 16px;
+}
+
+.threecolumns {
+      column-count: 3;
+      column-gap: 40px;
+      column-rule: 1px solid lightblue;
+      margin-left: 100px;
+      margin-right: 100px;
+}
+
+* {
+      box-sizing: border-box;
+}
+
+.column {
+      float: left;
+      width: 20%;
+      padding: 10px;
+}
+
+.row: after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.blue {
+      color: lightblue
+}
+
+.white {
+      color: white
+}
+
+.big {
+      font-size: 50px;
+}
+
+.title {
+      text-align: center;
+}
+
+.undersub {
+      text-decoration: underline;
+      text-align: center;
+      font-size: 25px;
+}
+
+body {
+      background: #430973;
+}
