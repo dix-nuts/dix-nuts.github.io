@@ -3,8 +3,8 @@ function myFunction() {
   let person = prompt("Please enter the password:", "");
   if (person == null || person == "") {
     text = "Too scared to guess the password?";
-  } else if (person == "iris is so hot and tall and smart") {
-  window.location = 'https://eyeris-who.github.io/information.html';
+  } else if (person == "ducks are tasty") {
+  window.location = 'https://dix-nuts.github.io/information.html';
    text = "I know I am :)";
   } else {
     text = "Get rekt lmao.";
